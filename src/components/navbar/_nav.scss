@@ -1,0 +1,56 @@
+$primario: rgb(230, 230, 230);
+$secundario: rgb(168, 168, 168);
+$blanco: #fff;
+$negro: #000;
+$lila: rgb(216, 168, 255);
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5rem;
+  background-color: $primario;
+  border-radius: 1rem;
+  position: sticky;
+  top: 0;
+
+  .lista {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      display: flex;
+      font-display: column;
+      justify-content: center;
+      position: relative;
+      text-decoration: none;
+      color: $negro;
+      padding: 1rem;
+      transition: 0.5s;
+      font-size: 2rem;
+    }
+
+    a:hover {
+      color: $blanco;
+      transition: 0.5s;
+    }
+
+    a::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: $blanco;
+      width: 100%;
+      height: 0.2rem;
+      bottom: 1%;
+      left: 0;
+      clip-path: circle(0% at 50% 50%);
+      transition: clip-path 0.5s;
+    }
+
+    a:hover::before {
+      clip-path: circle(100% at 50% 50%);
+    }
+  }
+}

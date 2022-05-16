@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.carta {
+  width: 20rem;
+  border: 0.2rem solid #000;
+  border-radius: 2rem;
+  background-color: rgb(236, 236, 236);
+}
+
+.carta img {
+  width: 100%;
+  background: #fff;
+  border-radius: 2rem;
+}
+
+.tecla {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.botonera {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.botonera button {
+  border: 0.1rem solid rgb(228, 187, 255);
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.botonera button,
+.botonera p {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.btn-add {
+  width: 60%;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border: 0.1rem solid rgb(228, 187, 255);
+  transition: 0.4s;
+}
+
+.botonera button:hover,
+.btn-add:hover {
+  border: 0.1rem solid rgb(209, 145, 252);
+  box-shadow: 0px 0px 3px 0px rgba(191, 145, 255, 1);
+  transition: 0.4s;
+}

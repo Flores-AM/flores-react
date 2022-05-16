@@ -1,0 +1,11 @@
+.carrito {
+  display: flex;
+  flex-direction: column;
+  width: 4rem;
+  padding-top: 1rem;
+
+  .img {
+    justify-content: center;
+    align-items: center;
+  }
+}
