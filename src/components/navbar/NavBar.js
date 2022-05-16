@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav>
       <div className="lista">
         <a href="#">Inicio</a>
-        <a href="#">Pokemones</a>
+        <a href="#">Usuarios</a>
         <a href="https://las.op.gg/summoners/las/blond%C4%B1e">Lolcito</a>
       </div>
       <Cart />
