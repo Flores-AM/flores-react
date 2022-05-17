@@ -1,0 +1,74 @@
+$primario: rgb(230, 230, 230);
+$secundario: rgb(168, 168, 168);
+$blanco: #fff;
+$negro: #000;
+$lila: rgb(216, 168, 255);
+
+.carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 1rem;
+  width: 20rem;
+
+  .botonera {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    display: flex;
+
+    button {
+      background-color: #fff;
+      border: 0.1rem solid $blanco;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+
+    button,
+    p {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 2.5rem;
+    }
+    button:hover {
+      cursor: pointer;
+      color: $lila;
+      transform: scale(1.5);
+      transition: transform 0.4s;
+    }
+
+    button:active {
+      transform: translateY(0.5rem);
+    }
+  }
+
+  .btn-add {
+    width: 60%;
+    font-size: 2rem;
+    background-color: #fff;
+    border: 0.1rem solid $blanco;
+  }
+
+  .btn-add:hover {
+    cursor: pointer;
+  }
+
+  .btn-add::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.3rem;
+    clip-path: circle(0% at 50% 50%);
+    background-color: $lila;
+    transition: clip-path 0.5s;
+  }
+
+  .btn-add:hover::after {
+    clip-path: circle(100% at 50% 50%);
+    background-color: $lila;
+    transition: clip-path 0.5s;
+  }
+}
